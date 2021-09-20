@@ -1,1 +1,1 @@
-https://souloflink.github.io/rsschool-cv/cv
+https://souloflink.github.io/rsschool-cv/
