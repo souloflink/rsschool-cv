@@ -1,0 +1,244 @@
+:root {
+    --nav-font-size: 20px;
+    --nav-font-weight: 500;
+    --avatar-title-font-size: 35px;
+    --avatar-subtitle-font-size: 30px;
+    --title-font-size: 30px;
+    --underline-width: 350px;
+    --underline-border: 7px solid #CB0000;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+* {
+    color: white;
+    text-decoration: none;
+    font-family: gilroy;
+}
+
+.body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #151120;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100px;
+    font-size: var(--nav-font-size);
+    font-weight: var(--nav-font-weight);
+    flex-wrap: wrap;
+}
+
+.avatar {
+    justify-content: center;
+    text-align: inherit;
+    text-align: center;
+
+}
+
+.avatar__photo {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0px;
+    display: block;
+}
+
+.avatar__title {
+    font-size: var(--avatar-title-font-size);
+    margin: 35px 0px 15px;
+}
+
+.avatar__subtitle {
+    font-size: var(--avatar-subtitle-font-size);
+    margin: 0
+}
+
+.title {
+    font-size: var(--title-font-size);
+    font-weight: 500;
+    margin: 60px auto 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.underline {
+    border: var(--underline-border) ;
+    width: var(--underline-width);
+    background-color: #CB0000;
+    margin: 0px auto 60px;
+}
+
+.about-me-text {
+    max-width: 50%;
+    margin: 60px auto 0px;
+    text-align: left;
+}
+
+
+.soft-skills__list {
+    padding: 0px;
+    width: 189px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.soft-skills__item, .hard-skills__item{
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(images/li.svg) no-repeat 0 50%/20px 20px; /* Параметры фона */
+    padding-left: 35px; /* Смещаем текст вправо */ 
+}
+
+.hard-skills__list {
+    padding: 0px;
+    width: 137px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education__wrapper {
+    width: 201px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education__subtitle {
+    font-weight: 500;
+}
+
+.projects__photo-link {
+    display: block;
+    margin: 0px auto;
+    height: 50%;
+    width: 50%;
+}
+
+.projects > a:not(:last-child) {
+    display: block;
+    margin: 0px auto 40px;
+}
+
+.example-of-code__code {
+    margin: 0px 10%
+}
+
+@media (max-width: 500px) {
+    .example-of-code__code {
+        margin: 0px;
+        font-size: 15px
+    }
+}
+
+.header__burger {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    display: none
+}
+
+@media (max-width: 700px) {
+    :root {
+        --nav-font-size: 25px;
+        --nav-font-weight: 500;
+        --avatar-title-font-size: 35px;
+        --avatar-subtitle-font-size: 30px;
+        --title-font-size: 30px;
+        --underline-width: 210px;
+        --underline-border: 3px solid #CB0000;
+        font-size: 20px;
+    }
+    .header__navigation {
+        display: none
+    }
+
+    .about-me-text {
+        max-width: 70%;
+    }
+    .soft-skills__list {
+        padding: 0px;
+        width: 189px;
+        margin: 0px auto;
+    }
+    .hard-skills__list {
+        padding: 0px;
+        width: 137px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .soft-skills__item, .hard-skills__item {
+        list-style: none; /* Убираем исходные маркеры */
+        background: url(images/li.svg) no-repeat 0 50%/18px 18px; /* Параметры фона */
+        padding-left: 35px; /* Смещаем текст вправо */ 
+    }
+    .projects__photo-link {
+        display: block;
+        margin: 0px auto;
+        height: 65%;
+        width: 65%;
+    }
+}
+
+.footer {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__logo-rs-school {
+    height: 75px;
+    margin: auto 0px auto 50px;
+}
+
+.footer_contacts {
+    margin-left: 150px;
+    color: black
+}
+
+.vk {
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(images/vk.svg) no-repeat 0 75%/16px 16px; /* Параметры фона */
+    padding-left: 20px; /* Смещаем текст вправо */ 
+    color: blue;
+}
+
+.tg {
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(images/tg.svg) no-repeat 0 75%/16px 16px; /* Параметры фона */
+    padding-left: 20px; /* Смещаем текст вправо */ 
+    color: blue;
+}
+
+.github {
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(images/github.svg) no-repeat 0 75%/16px 16px; /* Параметры фона */
+    padding-left: 20px; /* Смещаем текст вправо */ 
+    color: blue;
+}
+
+.footer__time-made {
+    color: black;
+    font-size: 50px;
+}
+
+@media (max-width: 1000px) {
+    .footer__time-made {
+        display: none;
+    }
+    .footer {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer__logo-rs-school, .vk, .tg {
+        display: none;
+    }
+    .footer__contacts {
+        margin-bottom: 15%;
+        margin-right: 27%
+    }
+}
