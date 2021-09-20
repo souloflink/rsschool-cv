@@ -178,7 +178,67 @@
         height: 65%;
         width: 65%;
     }
-    .header__burger {
-        display: inline-block
+}
+
+.footer {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__logo-rs-school {
+    height: 75px;
+    margin: auto 0px auto 50px;
+}
+
+.footer_contacts {
+    margin-left: 150px;
+    color: black
+}
+
+.vk {
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(images/vk.svg) no-repeat 0 75%/16px 16px; /* Параметры фона */
+    padding-left: 20px; /* Смещаем текст вправо */ 
+    color: blue;
+}
+
+.tg {
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(images/tg.svg) no-repeat 0 75%/16px 16px; /* Параметры фона */
+    padding-left: 20px; /* Смещаем текст вправо */ 
+    color: blue;
+}
+
+.github {
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(images/github.svg) no-repeat 0 75%/16px 16px; /* Параметры фона */
+    padding-left: 20px; /* Смещаем текст вправо */ 
+    color: blue;
+}
+
+.footer__time-made {
+    color: black;
+    font-size: 50px;
+}
+
+@media (max-width: 1000px) {
+    .footer__time-made {
+        display: none;
+    }
+    .footer {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer__logo-rs-school, .vk, .tg {
+        display: none;
+    }
+    .footer__contacts {
+        margin-bottom: 15%;
+        margin-right: 27%
     }
 }
