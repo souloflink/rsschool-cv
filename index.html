@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CV</title>
+    <link rel="stylesheet" href="scripts/styles/atom-one-dark.min.css">
+    <script src="scripts/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body class='body'>
+    <header class="header">
+        <nav class="header__navigation">
+            <a href="#about-me" class="header__navigation-link">
+                ABOUT ME
+            </a>
+            <a href="" class="header__navigation-link">
+                SKILLS
+            </a>
+            <a href="" class="header__navigation-link">
+                EDUCATION
+            </a>
+            <a href="" class="header__navigation-link">
+                PROJECTS
+            </a>
+            <a href="" class="header__navigation-link">
+                CODE
+            </a>
+        </nav>
+        <nav class="header__burger">
+            <a>
+                <img src="images/burger.svg" alt="none">
+            </a>
+        </nav>
+    </header>
+    <main class="content">
+        <figure class="avatar">
+            <img class='avatar__photo' src="images/avatarka.png" alt="Avatar">
+            <figcaption class="avatar__description">
+                <h1 class="avatar__title">Mikita Ruchai</h1>
+                <p class='avatar__subtitle'>Beginner FE Developer</p>
+            </figcaption>
+        </figure>
+        <section class="about-me" id='about-me'>
+            <h2 class="about-me__title title">ABOUT ME</h2>
+            <div class="about-me__underline underline"></div>
+            <p class="about-me-text">
+                I’m 15 years old belarus pupil. One time I have learnt
+                about programming and then understood that 
+                I want to become game developer, 
+                but finally I’m trying to become frontend developer</p>
+        </section>
+        <section class="soft-skills">
+            <h2 class="soft-skills__title title">SOFT SKILLS</h2>
+            <div class="soft-skills__underline underline"></div>
+            <ul class="soft-skills__list">
+                <li class="soft-skills__item">Communicability</li>
+                <li class="soft-skills__item">Purposefulness</li>
+                <li class="soft-skills__item">Team work</li>
+            </ul>
+        </section>
+        <section class="hard-skills">
+            <h2 class="hard-skills__title title">HARD SKILLS</h2>
+            <div class="hard-skills__underline underline"></div>
+            <ul class="hard-skills__list">
+                <li class="hard-skills__item">HTML, CSS</li>
+                <li class="hard-skills__item">JS (basic)</li>
+                <li class="hard-skills__item">Git, Github</li>
+                <li class="hard-skills__item">English (A2)</li>
+            </ul>
+        </section>
+        <section class="education">
+            <h2 class="education__title title">EDUCATION</h2>
+            <div class="education__underline underline"></div>
+            <div class="education__wrapper">
+            <h3 class="education__subtitle">
+                Junior High School
+            </h3>
+            <p class="education__time">
+                01.09.21 – 05.31.2023
+            </p>
+            <h3 class="education__subtitle">
+                RS School
+            </h3>
+            <p class="education__time">
+                01.09.21 – unknown
+            </p>
+            </div>
+        </section>
+        <section class="projects">
+            <h2 class="projects__title title">PROJECTS</h2>
+            <div class="projects__underline underline"></div>
+            <a href="https://vk.cc/c660bj" class="projects__example">
+                <img src="images/project.svg" alt="project" class='projects__photo-link'>
+            </a>
+            <a href="https://vk.cc/c660bj" class="projects__example">
+                <img src="images/project.svg" alt="project" class='projects__photo-link'>
+            </a>
+        </section>
+        <section class="example-of-code">
+            <h2 class="example-of-code__title title">CODE</h2>
+            <div class="example-of-code__underline underline"></div>
+            <pre class="example-of-code__code"><code>
+let n = 10;
+
+ nextPrime:
+    for (let i = 2; i &lt;= n; i++) { 
+
+    for (let j = 2; j &lt; i; j++) {
+         if (i % j == 0) continue nextPrime
+     }
+
+    alert( i );
+    }
+            </code></pre>
+
+        </section>
+    </main>
+    <footer class="footer">
+    </footer>
+</body>
+</html> 
