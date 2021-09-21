@@ -131,13 +131,6 @@
     }
 }
 
-.header__burger {
-    position: absolute;
-    right: 40px;
-    top: 30px;
-    display: none
-}
-
 @media (max-width: 700px) {
     :root {
         --nav-font-size: 25px;
@@ -149,8 +142,9 @@
         --underline-border: 3px solid #CB0000;
         font-size: 20px;
     }
+
     .header__navigation {
-        display: none
+        display: none;
     }
 
     .about-me-text {
@@ -234,11 +228,39 @@
 }
 
 @media (max-width: 450px) {
-    .footer__logo-rs-school, .vk, .tg {
+    .footer__logo-rs-school, .footer__contacts > li:not(:last-child) {
         display: none;
     }
     .footer__contacts {
-        margin-bottom: 15%;
-        margin-right: 27%
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    }
+    .footer__contacts > li:last-child {
+        text-align: center;
     }
 }
+
+@font-face {
+    font-family: "Gilroy"; 
+    src: url("fonts/Gilroy-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; 
+} 
+
+@font-face {
+    font-family: "Gilroy"; 
+    src: url("fonts/Gilroy-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 700; 
+} 
+
+@font-face {
+    font-family: "Gilroy"; 
+    src: url("fonts/Gilroy-Medium.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 500; 
+} 
+
+
+    
